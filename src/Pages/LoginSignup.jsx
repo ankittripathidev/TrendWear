@@ -24,9 +24,7 @@ const LoginSignup = () => {
 
       <form onSubmit={handleSubmit(submitHandler)}>
         <div className="loginsignup">
-
           <div className="loginsignup-container">
-
             {/* ================= LEFT SIDE ================= */}
 
             <div className="loginsignup-left">
@@ -34,8 +32,8 @@ const LoginSignup = () => {
                 <h1>Welcome to TrendWear</h1>
 
                 <p>
-                  Discover the latest fashion trends and find
-                  your perfect style.
+                  Discover the latest fashion trends and find your perfect
+                  style.
                 </p>
 
                 <div className="left-features">
@@ -57,25 +55,18 @@ const LoginSignup = () => {
               </div>
             </div>
 
-
             {/* ================= RIGHT SIDE ================= */}
 
             <div className="loginsignup-right">
-
               <div className="signup-header">
                 <h1>Create Account</h1>
 
-                <p>
-                  Sign up to get started with TrendWear
-                </p>
+                <p>Sign up to get started with TrendWear</p>
               </div>
-
 
               {/* User Name */}
               <div className="input-group">
-                <label htmlFor="username">
-                  User Name
-                </label>
+                <label htmlFor="username">User Name</label>
 
                 <input
                   id="username"
@@ -87,18 +78,13 @@ const LoginSignup = () => {
                 />
 
                 {errors.UserName && (
-                  <span className="error-msg">
-                    {errors.UserName.message}
-                  </span>
+                  <span className="error-msg">{errors.UserName.message}</span>
                 )}
               </div>
 
-
               {/* Email */}
               <div className="input-group">
-                <label htmlFor="email">
-                  Email Address
-                </label>
+                <label htmlFor="email">Email Address</label>
 
                 <input
                   id="email"
@@ -110,18 +96,13 @@ const LoginSignup = () => {
                 />
 
                 {errors.Email && (
-                  <span className="error-msg">
-                    {errors.Email.message}
-                  </span>
+                  <span className="error-msg">{errors.Email.message}</span>
                 )}
               </div>
 
-
               {/* Password */}
               <div className="input-group">
-                <label htmlFor="password">
-                  Password
-                </label>
+                <label htmlFor="password">Password</label>
 
                 <input
                   id="password"
@@ -131,59 +112,42 @@ const LoginSignup = () => {
                     required: "Password is required.",
                     minLength: {
                       value: 6,
-                      message:
-                        "Password must be at least 6 characters.",
+                      message: "Password must be at least 6 characters.",
                     },
                     maxLength: {
                       value: 12,
-                      message:
-                        "Password must be at most 12 characters.",
+                      message: "Password must be at most 12 characters.",
                     },
                   })}
                 />
 
                 {errors.Password && (
-                  <span className="error-msg">
-                    {errors.Password.message}
-                  </span>
+                  <span className="error-msg">{errors.Password.message}</span>
                 )}
               </div>
 
-
               {/* Terms */}
               <div className="loginsignup-agree">
-                <input
-                  type="checkbox"
-                  id="terms"
-                  required
-                />
+                <input type="checkbox" id="terms" required />
 
                 <label htmlFor="terms">
-                  By continuing, I agree to the{" "}
-                  <span>Terms of Use</span> and{" "}
+                  By continuing, I agree to the <span>Terms of Use</span> and{" "}
                   <span>Privacy Policy</span>.
                 </label>
               </div>
 
-
               {/* Button */}
-              <button
-                type="submit"
-                className="signup-btn"
-              >
+              <button type="submit" className="signup-btn">
                 Create Account
               </button>
-
 
               {/* Login */}
               <p className="loginsignup-login">
                 Already have an account?
                 <span> Login here</span>
               </p>
-
             </div>
           </div>
-
         </div>
       </form>
     </>
@@ -191,4 +155,3 @@ const LoginSignup = () => {
 };
 
 export default LoginSignup;
-

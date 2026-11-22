@@ -26,7 +26,9 @@ const Navbar = () => {
     <div className="navbar">
       <div className="nav-logo">
         <img src={logo} alt="logo" />
-        <p>Trend<span>Wear</span></p>
+        <p>
+          Trend<span>Wear</span>
+        </p>
       </div>
 
       <img

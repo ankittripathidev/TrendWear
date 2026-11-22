@@ -15,7 +15,6 @@
   background: #f7f7f7;
 }
 
-
 /* =========================================
    MAIN CONTAINER
 ========================================= */
@@ -34,10 +33,8 @@
 
   border-radius: 18px;
 
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 }
-
 
 /* =========================================
    LEFT SIDE
@@ -53,14 +50,8 @@
 
   color: #ffffff;
 
-  background:
-    linear-gradient(
-      135deg,
-      #d62e2e,
-      #e94b72
-    );
+  background: linear-gradient(135deg, #d62e2e, #e94b72);
 }
-
 
 /* Decorative circles */
 
@@ -96,7 +87,6 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
-
 /* Left content */
 
 .left-content {
@@ -124,7 +114,6 @@
 
   color: rgba(255, 255, 255, 0.9);
 }
-
 
 /* =========================================
    LEFT FEATURES
@@ -168,7 +157,6 @@
   font-size: 0.9rem;
 }
 
-
 /* =========================================
    RIGHT SIDE
 ========================================= */
@@ -182,7 +170,6 @@
 
   background: #ffffff;
 }
-
 
 /* =========================================
    HEADER
@@ -208,7 +195,6 @@
 
   font-size: 0.9rem;
 }
-
 
 /* =========================================
    INPUT GROUP
@@ -261,10 +247,8 @@
 .input-group input:focus {
   border-color: #d62e2e;
 
-  box-shadow:
-    0 0 0 3px rgba(214, 46, 46, 0.1);
+  box-shadow: 0 0 0 3px rgba(214, 46, 46, 0.1);
 }
-
 
 /* =========================================
    ERROR
@@ -277,7 +261,6 @@
 
   font-size: 0.75rem;
 }
-
 
 /* =========================================
    TERMS
@@ -320,7 +303,6 @@
   font-weight: 500;
 }
 
-
 /* =========================================
    BUTTON
 ========================================= */
@@ -342,8 +324,7 @@
 
   cursor: pointer;
 
-  box-shadow:
-    0 6px 15px rgba(214, 46, 46, 0.2);
+  box-shadow: 0 6px 15px rgba(214, 46, 46, 0.2);
 
   transition: 0.2s ease;
 }
@@ -351,14 +332,12 @@
 .signup-btn:hover {
   background: #c92525;
 
-  box-shadow:
-    0 8px 20px rgba(214, 46, 46, 0.25);
+  box-shadow: 0 8px 20px rgba(214, 46, 46, 0.25);
 }
 
 .signup-btn:active {
   transform: scale(0.98);
 }
-
 
 /* =========================================
    LOGIN LINK
@@ -385,7 +364,6 @@
 .loginsignup-login span:hover {
   text-decoration: underline;
 }
-
 
 /* =========================================
    TABLET
@@ -424,7 +402,6 @@
     padding: 2.5rem;
   }
 }
-
 
 /* =========================================
    MOBILE
@@ -504,7 +481,6 @@
   }
 }
 
-
 /* =========================================
    SMALL MOBILE
 ========================================= */
@@ -548,4 +524,3 @@
     font-size: 0.78rem;
   }
 }
-

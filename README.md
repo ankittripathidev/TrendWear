@@ -104,12 +104,10 @@ This project follows a **component-based architecture**, with well-structured `C
 | ------------------------------------ |
 | ![AddToCart](./public/addToCart.PNG) |
 
-
 ## 🔗 Links
 
 - 🌐 **Live Demo**: [Live Demo](https://trendwear-clothingsite.vercel.app/)
 - 📁 **GitHub Repo**: [Source Code](https://github.com/ankittripatidevs/TrendWear)
-
 
 ## 💡 What I Learned
 
@@ -123,7 +121,6 @@ While building TrendWear, I enhanced my understanding of:
 - Cart features: **Add to Cart** & **Remove from Cart**.
 - Responsive design with **Google Fonts** & **Material UI**.
 - Enhanced UX with **smooth scroll** and transitions.
-
 
 ## 📦 Getting Started
 

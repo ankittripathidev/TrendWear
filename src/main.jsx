@@ -6,5 +6,5 @@ import ShopContext from "./Context/ShopContext.jsx";
 createRoot(document.getElementById("root")).render(
   <ShopContext>
     <App />
-  </ShopContext>
+  </ShopContext>,
 );
