@@ -27,6 +27,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^17.14.0",
     "prettier": "^3.10.1",
     "vite": "^6.0.5"
