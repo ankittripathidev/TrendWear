@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import all_product from "../Components/Assets/all_product";
 import swal from "sweetalert";
@@ -46,7 +45,7 @@ const ShopContext = (props) => {
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
         let itemInfo = all_product.find(
-          (product) => product.id === Number(item)
+          (product) => product.id === Number(item),
         );
 
         if (itemInfo) {
