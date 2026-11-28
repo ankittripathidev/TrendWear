@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-copyright">
-        <hr />© 2026 Ankit Tripathi. All Rights Reserved.
+        <hr />© 2026 Ankit. All Rights Reserved.
       </div>
     </div>
   );
