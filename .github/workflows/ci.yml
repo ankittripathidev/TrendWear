@@ -82,4 +82,3 @@ jobs:
       - build-and-push
     uses: ./.github/workflows/cd.yml
     secrets: inherit
-    
