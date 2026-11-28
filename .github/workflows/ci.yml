@@ -14,7 +14,6 @@ on:
 permissions:
   contents: read
 
-
 # Jobs
 jobs:
   # =====================================
@@ -43,7 +42,7 @@ jobs:
       # Step 4: Check Formatting
       - name: Check Formatting
         run: npx prettier --check .
-      
+
       # Step.5 Run Lint
       - name: Run Linter
         run: npm run lint
@@ -72,7 +71,6 @@ jobs:
         with:
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/trendwear-frontend:latest
-
 
   # =====================================
   # JOB 3: Deploy
