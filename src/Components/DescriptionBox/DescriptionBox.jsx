@@ -13,13 +13,13 @@ const DescriptionBox = () => {
           Welcome to our online clothing boutique, where style meets
           convenience! Explore our curated collection of fashion-forward apparel
           for every occasion, from casual everyday wear to elegant evening
-          ensembles. Whether you&apos;re searching for the perfect outfit to express
-          your unique personality or seeking timeless wardrobe staples, our
-          diverse range ensures there&apos;s something for everyone. With hassle-free
-          browsing and secure checkout, indulging in your fashion cravings has
-          never been easier. Discover the latest trends, express your
-          individuality, and redefine your style effortlessly with our online
-          shopping experience.
+          ensembles. Whether you&apos;re searching for the perfect outfit to
+          express your unique personality or seeking timeless wardrobe staples,
+          our diverse range ensures there&apos;s something for everyone. With
+          hassle-free browsing and secure checkout, indulging in your fashion
+          cravings has never been easier. Discover the latest trends, express
+          your individuality, and redefine your style effortlessly with our
+          online shopping experience.
         </p>
       </div>
     </div>
