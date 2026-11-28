@@ -1,17 +1,18 @@
-import { createContext, useState } from "react";
+
+import { useState } from "react";
 import all_product from "../Components/Assets/all_product";
-import swal from "sweetalert"; // Import SweetAlert
+import swal from "sweetalert";
+import ShopContextCreated from "./ShopContext";
 
 const getDefaultCart = () => {
   let cart = {};
+
   for (let i = 0; i < all_product.length + 1; i++) {
     cart[i] = 0;
   }
+
   return cart;
 };
-
-//(1) create context here
-const ShopContextCreated = createContext(null);
 
 const ShopContext = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
@@ -19,9 +20,9 @@ const ShopContext = (props) => {
   const addToCart = (itemId) => {
     setCartItems((prevCart) => ({
       ...prevCart,
-      [itemId]: (prevCart[itemId] || 0) + 1, // first-time addition starts from 1
+      [itemId]: (prevCart[itemId] || 0) + 1,
     }));
-    // SweetAlert pop-up
+
     swal({
       title: "Success!",
       text: "Item added to cart successfully.",
@@ -41,29 +42,35 @@ const ShopContext = (props) => {
   // Total Cart Amount
   const getTotalCartAmount = () => {
     let totalAmount = 0;
+
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
         let itemInfo = all_product.find(
-          (product) => product.id === Number(item),
+          (product) => product.id === Number(item)
         );
-        totalAmount += itemInfo.new_price * cartItems[item];
+
+        if (itemInfo) {
+          totalAmount += itemInfo.new_price * cartItems[item];
+        }
       }
     }
+
     return totalAmount;
   };
 
   // Total Cart Items
   const getTotalCartItems = () => {
     let totalItems = 0;
+
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
         totalItems += cartItems[item];
       }
     }
+
     return totalItems;
   };
 
-  //(2) contextValue Send
   const contextValue = {
     all_product,
     cartItems,
@@ -81,4 +88,3 @@ const ShopContext = (props) => {
 };
 
 export default ShopContext;
-export { ShopContextCreated };
