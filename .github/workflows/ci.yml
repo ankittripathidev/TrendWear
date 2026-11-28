@@ -1,11 +1,19 @@
+# Goal: Lint, Test, Build Frontend
+# Then Push Docker Images to DockerHub
+
 # Workflow Name
 name: CI
 
-# Trigger: Run this workflow whenever code is pushed to the main branch
+# Trigger
 on:
   push:
     branches:
       - main
+
+# Minimum permissions
+permissions:
+  contents: read
+
 
 # Jobs
 jobs:
@@ -24,8 +32,9 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: "24"
-          cache: "npm"
+          node-version: 24
+          cache: npm
+          cache-dependency-path: package-lock.json
 
       # Step 3: Install project dependencies
       - name: Install Dependencies
@@ -34,6 +43,10 @@ jobs:
       # Step 4: Check Formatting
       - name: Check Formatting
         run: npx prettier --check .
+      
+      # Step.5 Run Lint
+      - name: Run Linter
+        run: npm run lint
 
   # =====================================
   # JOB 2: Docker Build and Push
@@ -59,3 +72,15 @@ jobs:
         with:
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/trendwear-frontend:latest
+
+
+  # =====================================
+  # JOB 3: Deploy
+  # =====================================
+  deploy:
+    name: Deploy Application
+    needs:
+      - code-lint
+      - build-and-push
+    uses: ./.github/workflows/cd.yml
+    secrets: inherit
